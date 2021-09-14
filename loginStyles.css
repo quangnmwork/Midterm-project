@@ -35,8 +35,8 @@
 .panel-container h2 { 
     color: rgb(255, 248, 248);
     position: absolute;
-    top:-20%;
-    left:10%;
+    top: -8rem;
+    
     font-size: 3rem;
 }
 
