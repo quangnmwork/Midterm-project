@@ -16,8 +16,8 @@
 .container:before {
     content: "";
     position: absolute;
-    height: 600vh;
-    width: 500vw;
+    height: 250%;
+    width: 150%;
     top: 10%;
     right:45%;
     transform: translateY(-50%);
