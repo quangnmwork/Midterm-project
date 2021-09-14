@@ -16,8 +16,8 @@
 .container:before {
     content: "";
     position: absolute;
-    height: 2050px;
-    width: 2000px;
+    height: 200rem;
+    width: 200rem;
     top: 10rem;
     right:65rem;
     transform: translateY(-50%);
@@ -36,7 +36,6 @@
     color: rgb(255, 248, 248);
     position: absolute;
     top: -8rem;
-    
     font-size: 3rem;
 }
 
