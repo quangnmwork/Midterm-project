@@ -18,8 +18,8 @@
     position: absolute;
     height: 2050px;
     width: 2000px;
-    top: -10%;
-    right: 48%;
+    top: 10rem;
+    right:65rem;
     transform: translateY(-50%);
     background-image: linear-gradient(-45deg, #4481eb 0%, #04befe 100%);
     transition: 1.8s ease-in-out;
@@ -29,8 +29,8 @@
 .panel-container {
     z-index: 2;
     position: absolute; 
-    top:15%;
-    left:10%;
+    top: 10rem;
+    right:60rem;
 }
 .panel-container h2 { 
     color: rgb(255, 248, 248);
