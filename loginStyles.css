@@ -16,8 +16,8 @@
 .container:before {
     content: "";
     position: absolute;
-    height: 250%;
-    width: 150%;
+    height: 200%;
+    width: 100%;
     top: 10%;
     right:45%;
     background-size: cover;
@@ -30,9 +30,10 @@
 .panel-container img{
     z-index: 2;
     position: absolute; 
-    top: 25%;
-    background-size: cover;
-    right:60%;
+    top: 20%;
+    width: 60%;
+    height: 60%;
+    right:40%;
 }
 .panel-container h2  { 
     color: rgb(255, 248, 248);
@@ -40,8 +41,8 @@
     font-size: 4rem;
     text-align: center;
     position: absolute; 
-    top: 10%;
-    right:80%;
+    top: 5%;
+    right:70%;
 }
 
 
@@ -56,21 +57,20 @@
 .sign-in-form { 
     position: absolute;
     top: 30%;
-    left: 60%;
-    width: 30%;
+    left: 50%;
+    width: 40%;
     height: 40%;
 }
 form{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-column: 1;
     width: 100%;
     height: 100%;
     background-color: #fff;
     border-radius: 10%;
     align-items: center;
     justify-content: center;
-    padding: 0rem 5rem;
-    transition: all 0.2s 0.7s;
     overflow: hidden;
     padding: 0 2em;
 }
@@ -116,13 +116,15 @@ form .btn button{
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    border-color: #fff;
+    border-color: #488afb;
     color:#fff;
-    margin-left: 1em;
     width: 12em;
-    height: 3em;
+    height: 2.5em;
     border-radius: 40px;
     font-size: 1em;
     background-color: #488afb;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+form .btn button:hover{
+    background-color: #0456e4;
+    cursor: pointer;
 }
