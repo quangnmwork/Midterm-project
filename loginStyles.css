@@ -16,8 +16,8 @@
 .container:before {
     content: "";
     position: absolute;
-    height: 200rem;
-    width: 200rem;
+    height: 200vh;
+    width: 200vh;
     top: 10rem;
     right:65rem;
     transform: translateY(-50%);
@@ -32,7 +32,7 @@
     top: 10rem;
     right:60rem;
 }
-.panel-container h2 { 
+.panel-container h2  { 
     color: rgb(255, 248, 248);
     position: absolute;
     top: -8rem;
@@ -74,7 +74,7 @@ form .title {
     color: #444;
     text-align: center;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom:3px;
 }
 form .input_field{ 
     display:grid; 
