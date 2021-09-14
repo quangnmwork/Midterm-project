@@ -30,6 +30,7 @@
     z-index: 2;
     position: absolute; 
     top: 25%;
+    background-size: cover;
     right:60%;
 }
 .panel-container h2  { 
