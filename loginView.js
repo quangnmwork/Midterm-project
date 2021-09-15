@@ -42,11 +42,12 @@ const loginUserHandler = () => {
     event.preventDefault() ; 
     errorLoginHandler();
     })
-    btnLoginAdmin.addEventListener('click',(event) => {
+   
+}
+ btnLoginAdmin.addEventListener('click',(event) => {
         event.preventDefault(); 
         errorLoginHandler();
-    })
-}
+})
 const keystrokeHandler = () => {
     enteredUsername.addEventListener('input',()=> {
         errorMessage[0].innerText = '';
