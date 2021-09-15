@@ -38,10 +38,10 @@ const errorLoginHandler = () => {
 }
 
 const loginUserHandler = () => { 
-    // btnLoginUser.addEventListener('click', (event) => {
-    //     event.preventDefault() ; 
-    //     errorLoginHandler();
-    // })
+    btnLoginUser.addEventListener('click', (event) => {
+        event.preventDefault() ; 
+        errorLoginHandler();
+    })
     btnLoginAdmin.addEventListener('click',(event) => {
         event.preventDefault(); 
         errorLoginHandler();
