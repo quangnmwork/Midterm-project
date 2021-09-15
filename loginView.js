@@ -42,6 +42,8 @@ const loginUserHandler = () => {
         event.preventDefault() ; 
         errorLoginHandler();
     })
+}
+const loginAdminHandler = () => {
     btnLoginAdmin.addEventListener('click',(event) => {
         event.preventDefault(); 
         errorLoginHandler();
@@ -50,20 +52,17 @@ const loginUserHandler = () => {
 
 const keystrokeHandler = () => {
     enteredUsername.addEventListener('input',()=> {
-        errorMessage[0].innerText = '';
-        errorMessage[0].style.visibility = 'hidden';
-        inputHandler[0].style.backgroundColor = '#f0f0f0';  
+        errorStyleHandler(false,0,'')
     })
     enteredPassword.addEventListener('input', () => {
-        errorMessage[1].innerText = ''
-        errorMessage[1].style.visibility = 'hidden';
-        inputHandler[1].style.backgroundColor = '#f0f0f0'; 
+        errorStyleHandler(false,1,'')
     })
 }
 
 
 const init = () => {
     loginUserHandler();
+    loginAdminHandler();
     keystrokeHandler();
 }
 init();
