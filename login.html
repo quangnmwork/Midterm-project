@@ -23,21 +23,24 @@
                     <h2 class="title">Sign in</h2>
                     <div class="input_field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username....">
+                        <input id ="username" type="text" placeholder="Username....">
+                        <small>error message</small>
                     </div>
                     <div class="input_field">
                         <i class="fas fa-lock"></i>
-                        <input type="text" placeholder="Password....">
+                        <input id = "password" type="password" placeholder="Password....">
+                        <small>error message</small>
                     </div>
                     <div class="btn">
-                        <button type="submit">Login as admin</button>
+                        <button id = "btn__admin" type="submit">Login as admin</button>
                     </div>
                     <div class="btn">
-                        <button type="submit">Login as User</button>
+                        <button id = "btn__user" type="submit">Login as User</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+    <script src="loginView.js"></script>
 </body>
 </html>
