@@ -4,6 +4,7 @@ const inputHandler = document.querySelectorAll(".input_field");
 const enteredUsername = document.getElementById("username");
 const enteredPassword = document.getElementById("password");
 const btnLoginUser = document.getElementById("btn__user");
+const btnLoginAdmin = document.getElementById("btn__admin");
 const errorMessage = document.querySelectorAll("small");
 const errorMessageUsername = "Username must not be empty" ;
 const errorMessagePassword = "Password must not be empty" ;
@@ -40,6 +41,10 @@ const loginUserHandler = () => {
     btnLoginUser.addEventListener('click', (event) => {
     event.preventDefault() ; 
     errorLoginHandler();
+    })
+    btnLoginAdmin.addEventListener('click',(event) => {
+        event.preventDefault(); 
+        errorLoginHandler();
     })
 }
 const keystrokeHandler = () => {
