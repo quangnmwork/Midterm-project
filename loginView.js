@@ -45,6 +45,8 @@ const loginUserHandler = () => {
     btnLoginUser.addEventListener('click', (event) => {
         event.preventDefault() ; 
         const isValid =errorLoginHandler();
+        const arrPathName = window.location.pathname.split('/');
+        console.log(arrPathName[1],arrPathName[0])
         console.log(window.location.origin,window.location.pathname)
         //isValid?window.location.pathname='./user.html':errorLoginHandler();
         
