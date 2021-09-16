@@ -64,6 +64,12 @@ header .person__logout span{
 header .person__logout i{
     color: #3a2626;
 }
+header .person__cart .item__total {
+    background-color: #a0a3ad;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 15px;
+}
 .search{
     margin-top: 2.5rem;
     margin-left: 5rem;
@@ -129,8 +135,8 @@ background: #0b7dda;
     gap: 3rem 1rem;
   }
   .product__center img {
-      max-width: 12rem;
-      max-height: 12rem;
+      width: 10rem;
+      height: 10rem;
   }
   
   .product {
@@ -339,12 +345,15 @@ background: #0b7dda;
   
   .cart__footer .btn {
     display: inline-block;
-    padding: 1.5rem 3rem;
+    padding: 1rem 2rem;
     font-size: 2rem;
     background-color: var(--orange);
     border: none;
     margin-top: 2rem;
+    border-radius: 30px;
+    cursor: pointer;
   }
+  
   
   .cart__footer .btn:focus {
     outline: none;
