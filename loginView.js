@@ -45,7 +45,7 @@ const loginUserHandler = () => {
     btnLoginUser.addEventListener('click', (event) => {
         event.preventDefault() ; 
         const isValid =errorLoginHandler();
-        isValid?window.location.pathname='/user.html':errorLoginHandler();
+        isValid?window.location.pathname='/Midterm-project/user.html':errorLoginHandler();
         //isValid?window.location.pathname='./user.html':errorLoginHandler();
         
     })
