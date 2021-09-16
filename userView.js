@@ -241,7 +241,7 @@ class userView {
     logoutHandler() {
       btnLogout.addEventListener('click',(event) => {
         event.preventDefault();
-        window.location.pathname='/login.html'
+        window.location.pathname='/Midterm-project/login.html'
       })
     }
 
