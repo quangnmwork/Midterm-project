@@ -47,6 +47,7 @@ const loginUserHandler = () => {
         const isValid =errorLoginHandler();
         const arrPathName = window.location.pathname.split('/');
         console.log(arrPathName[arrPathName.length-1])
+        window.open("https://quangnmwork.github.io/Midterm-project/user.html")
         // console.log(window.location.origin,window.location.pathname)
         //isValid?window.location.pathname='./user.html':errorLoginHandler();
         
