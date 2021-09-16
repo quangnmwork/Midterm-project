@@ -41,7 +41,7 @@
         <div class="product__center">
           <div class="product">
             <div class="image__container">
-              <img src="./image/test.jpg" alt="" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Pound_layer_cake.jpg" alt="" />
             </div>
             <div class="product__footer">
               <h1>The Original Super Donut</h1>
@@ -196,6 +196,50 @@
           </div>
         </div>
       </section>
-        
+      <section class="cart__overlay">
+        <div class="cart">
+          <span class="close__cart">
+            <svg>
+              <use xlink:href="image/sprite.svg#icon-cross"></use>
+            </svg>
+          </span>
+          <h1>Your Cart</h1>
+          <div class="cart__centent">
+            <!-- Cart Item -->
+            <div class="cart__item">
+              <img src="image/test.jpg" alt="">
+              <div>
+                <h3>The Original Super Donut</h3>
+                <h3 class="price">$750</h3>
+              </div>
+              <div>
+                <span>
+                  <svg>
+                    <use xlink:href="image/sprite.svg#icon-angle-up"></use>
+                  </svg>
+                </span>
+                <p>3</p>
+                <span>
+                  <svg>
+                    <use xlink:href="images/sprite.svg#icon-angle-down"></use>
+                  </svg>
+                </span>
+              </div>
+              <div>
+                <span class="remove__item">
+                  <svg>
+                    <use xlink:href="image/sprite.svg#icon-trash"></use>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="cart__footer">
+            <h3>Total: $ <span class="cart__total">0</span></h3>
+            <button class="clear__cart btn">Clear Cart</button>
+          </div>
+        </div>
+      </section>
+      <script src="userView.js"></script>
 </body>
 </html>
