@@ -41,7 +41,7 @@ const loginUserHandler = () => {
     btnLoginUser.addEventListener('click', (event) => {
         event.preventDefault() ; 
         errorLoginHandler();
-        window.location.href="/user.html"
+        window.location.pathname = '/user.html'
     })
 }
 const loginAdminHandler = () => {
