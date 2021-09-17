@@ -8,7 +8,9 @@ const overlay = document.querySelector(".cart__overlay");
 const cartTotal = document.querySelector(".cart__total");
 const clearCartBtn = document.querySelector(".clear__cart");
 const itemTotals = document.querySelector(".item__total");
-const btnLogout  = document.querySelector(".person__logout")
+const btnLogout  = document.querySelector(".person__logout");
+const orderCartBtn = document.querySelector(".order__cart");
+const footerCart = document.querySelector(".cart__footer h3");
 const state = {
     products:[],
     carts:[],
@@ -155,6 +157,13 @@ class userView {
         this.clearCart();
         window.localStorage.removeItem('cart');
       });
+      //Oder cart
+      orderCartBtn.addEventListener('click',(e) =>{
+        e.preventDefault();
+        this.clearCart();
+        footerCart.innerHTML = 'Thank you for oder'
+        window.localStorage.removeItem('cart');
+      })
   
       // Cart Functionality
       cartContent.addEventListener("click", e => {
@@ -192,7 +201,6 @@ class userView {
         }
       });
     }
-  
     clearCart() {
       const cartItems = state.carts.map(item => item.id);
       cartItems.forEach(id => this.removeItem(id));
@@ -255,7 +263,6 @@ class productStorage {
       const products = JSON.parse(localStorage.getItem("products"));
       return products.find(product => product.id === parseFloat(id, 10));
     }
-    
     static saveCart(cart) {
       localStorage.setItem("cart", JSON.stringify(cart));
     }
