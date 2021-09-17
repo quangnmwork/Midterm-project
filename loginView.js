@@ -53,6 +53,8 @@ const loginUserHandler = () => {
 const loginAdminHandler = () => {
     btnLoginAdmin.addEventListener('click',(event) => {
         event.preventDefault();
+        const isValid =errorLoginHandler();
+        isValid?window.location.pathname='/Midterm-project/admin.html':errorLoginHandler();
     })
 }
 
